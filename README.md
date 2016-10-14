@@ -1,2 +1,2 @@
 # MBAdventure
-Assignment for choose Mission Bit
+Assignment for Mission Bit

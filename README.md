@@ -1,2 +1,2 @@
 # MBAdventure
-Assignment for choose your own adventure
+Assignment for choose Mission Bit

@@ -3,3 +3,10 @@ body
     font-family: 'Courier New', monospace;
     text-align: center
 }
+
+.icon {
+    width: 234px;
+    height: 380px;
+    margin: 2px;
+    display: inline-block;
+}

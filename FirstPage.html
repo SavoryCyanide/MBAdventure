@@ -5,7 +5,7 @@
   </head>
 <body>
   <p>Rock Paper Scissor</p>
-  <P>Player One</P>
+  <P id="playerTitle">Player One</P>
 
 <!--
 <div>
@@ -16,10 +16,56 @@
 //-->
 
 <div>
-    <input type="image" src="Rock.jpg" onClick="rock()"/>
-    <input type="image" src="Paper.jpg" onClick="paper()"/>
-    <input type="image" src="Scissors.jpg" onClick="scissor()"/>
+    <input type="image" src="Rock.jpg" onClick="chooser('rock')"/>
+    <input type="image" src="Paper.jpg" onClick="chooser('paper')"/>
+    <input type="image" src="Scissors.jpg" onClick="chooser('scissor')"/>
 </div>
+    
+<script>
+var player = 1;
+var choice1 = '';
+
+function chooser(choice) {
+    if (player == 1) {
+        choice1 = choice;
+        player = 2;
+        document.getElementById("playerTitle").innerHTML = "Player Two";
+        #alert('part1');
+    }
+    
+    else if (player == 2) {
+        decider(choice);
+        #alert('part2');
+    }
+
+}
+    
+function decider(choice2) {
+    if (choice1 == choice2)
+        alert('Its a tie');
+    
+    if (choice1 == 'rock' && choice2 == 'paper')
+        alert('Player Two Wins');
+        
+    if (choice1 == 'rock' && choice2 == 'scissor')
+        alert('Player One Wins');
+    
+    if (choice1 == 'paper' && choice2 == 'rock')
+        alert('Player One Wins');
+        
+    if (choice1 == 'paper' && choice2 == 'scissor')
+        alert('Player Two Wins');
+        
+    if (choice1 == 'scissor' && choice2 == 'rock')
+        alert('Player Two Wins');
+        
+    if (choice1 == 'scissor' && choice2 == 'paper')
+        alert('Player One Wins');
+
+    player = 1;
+    document.getElementById("playerTitle").innerHTML = "Player One";
+}
+</script>
 
 <!--    
 <ul>
